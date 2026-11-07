@@ -1,0 +1,22 @@
+VERIFICATION RESULTS
+====================
+Python 3.12 clean virtual environment: dependencies installed successfully.
+Bundled pyquotex import + numpy 2.2.6: PASS.
+Python compilation for all distributed .py files: PASS.
+Offline unit/integration tests: 21 passed.
+Original embedded UI_HTML and INDEX_HTML compared with the upload: exact match.
+Original pyquotex-1.0.3.tar.gz: byte-for-byte match.
+Local real HTTP /healthz and original UI: PASS.
+Local real WebSocket UI delivery: PASS.
+Public trading endpoint cannot inherit owner credentials: PASS.
+Graceful SIGTERM + market snapshot persistence: PASS.
+Token login/logout/relogin and login rejection: mocked offline tests PASS.
+Cloudflare URL parsing/reuse/stop: mocked process tests PASS.
+Flat ZIP structure (files only, no folder entries): PASS.
+
+NOT TESTED LIVE
+Telegram API delivery, actual Quotex authentication/candle fetching, broker trades,
+Cloudflare external reachability, Docker image build, Railway deployment.
+These require your deployment environment/credentials. No real orders were placed.
+
+Read DEPLOY_BN.txt for setup, limits and security notes.
